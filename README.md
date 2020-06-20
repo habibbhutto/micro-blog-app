@@ -1,3 +1,7 @@
+# Micro Blog App
+
+It is build using reactjs, redux, redux-saga and react-router.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -26,6 +30,13 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run storybook`
+
+Runs the storybook app in the development mode.<br />
+Open [http://localhost:9009](http://localhost:9009) to view it in the browser.
+
+The page will reload if you make edits.<br />
 
 ### `npm run eject`
 
