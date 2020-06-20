@@ -1,6 +1,6 @@
 # Micro Blog App
 
-It is build using reactjs, redux, redux-saga and react-router.
+It is built using reactjs, redux, redux-saga and react-router.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
