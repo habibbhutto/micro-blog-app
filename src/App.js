@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Provider } from 'react-redux';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Switch } from 'react-router';
+
+import BlogPostList from './components/BlogPostList';
+import PostView from './components/PostView';
+import { fetchAllPosts } from './store/actions';
+import store from './store';
+import MainHeader from './components/MainHeader';
+import MainFooter from './components/MainFooter';
+
+import './index.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <Router>
+        <MainHeader />
+        <Switch>
+          <Route path='/post/:id' component={PostView} />
+          <Route path='/' component={BlogPostList} />
+        </Switch>
+        <MainFooter />
+      </Router>
+    </Provider>
   );
 }
+
+store.dispatch(fetchAllPosts());
 
 export default App;

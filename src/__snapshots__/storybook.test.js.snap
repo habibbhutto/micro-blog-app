@@ -1,0 +1,292 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots BlogPost Default 1`] = `
+<div
+  className="blog-post-card"
+>
+  <p
+    className="date-time"
+  >
+    2020 Jan 12 09:25PM
+  </p>
+  <h3
+    className="title"
+  >
+    Test Blog Post
+  </h3>
+  <p>
+    The Redux API surface is tiny. Redux defines a set of contracts for you to implement (such as reducers) and provides a few helper functions to tie these contracts together.
+  </p>
+  <a
+    href="/post/1"
+    onClick={[Function]}
+  >
+    <button
+      className="continue-button"
+    >
+      Continue reading
+    </button>
+  </a>
+</div>
+`;
+
+exports[`Storyshots BlogPostList Default 1`] = `
+<div>
+  <div
+    className="blog-post-card"
+  >
+    <p
+      className="date-time"
+    >
+      2020 Jan 12 09:25PM
+    </p>
+    <h3
+      className="title"
+    >
+      Test Blog Post
+    </h3>
+    <p>
+      The Redux API surface is tiny. Redux defines a set of contracts for you to implement (such as reducers) and provides a few helper functions to tie these contracts together.
+    </p>
+    <a
+      href="/post/1"
+      onClick={[Function]}
+    >
+      <button
+        className="continue-button"
+      >
+        Continue reading
+      </button>
+    </a>
+  </div>
+  <div
+    className="blog-post-card"
+  >
+    <p
+      className="date-time"
+    >
+      2020 Jan 12 09:25PM
+    </p>
+    <h3
+      className="title"
+    >
+      Dummy Blog Post
+    </h3>
+    <p>
+      The Redux API surface is tiny. Redux defines a set of contracts for you to implement (such as reducers) and provides a few helper functions to tie these contracts together.
+    </p>
+    <a
+      href="/post/2"
+      onClick={[Function]}
+    >
+      <button
+        className="continue-button"
+      >
+        Continue reading
+      </button>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots CommentBox Default 1`] = `
+<div
+  className="comment-card"
+>
+  <p
+    className="body"
+  >
+    laudantium enim quasi est quidem magnam voluptate ipsam eos
+tempora quo necessitatibus
+dolor quam autem quasi
+reiciendis et nam sapiente accusantium
+  </p>
+  <p
+    className="user-name"
+  >
+    id labore ex et quam laborum &lt;Eliseo@gardner.biz&gt;
+  </p>
+</div>
+`;
+
+exports[`Storyshots CommentsList Default 1`] = `
+<div
+  className="comments-list-box"
+>
+  <h4
+    className="title"
+  >
+    Comments
+  </h4>
+  <div>
+    <div
+      className="comment-card"
+    >
+      <p
+        className="body"
+      >
+        laudantium enim quasi est quidem magnam voluptate ipsam eos
+tempora quo necessitatibus
+dolor quam autem quasi
+reiciendis et nam sapiente accusantium
+      </p>
+      <p
+        className="user-name"
+      >
+        id labore ex et quam laborum &lt;Eliseo@gardner.biz&gt;
+      </p>
+    </div>
+    <div
+      className="comment-card"
+    >
+      <p
+        className="body"
+      >
+        est natus enim nihil est dolore omnis voluptatem numquam
+et omnis occaecati quod ullam at
+voluptatem error expedita pariatur
+nihil sint nostrum voluptatem reiciendis et
+      </p>
+      <p
+        className="user-name"
+      >
+        quo vero reiciendis velit similique earum &lt;Jayne_Kuhic@sydney.com&gt;
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots MainFooter Default 1`] = `
+<div
+  className="footer-card"
+>
+  <center>
+    <p
+      className="footer-text"
+    >
+      Micro Blog © - 2020 All rights reserved.
+    </p>
+  </center>
+</div>
+`;
+
+exports[`Storyshots MainHeader Default 1`] = `
+<div
+  className="topnav"
+>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    Home
+  </a>
+  <a
+    href="/about"
+    onClick={[Function]}
+  >
+    About
+  </a>
+  <a
+    href="https://github.com/habibbhutto"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Github
+  </a>
+</div>
+`;
+
+exports[`Storyshots MessageCard Default 1`] = `
+<div
+  className="message-card"
+>
+  <h3
+    className="message-title"
+  >
+    Something went wrong
+  </h3>
+  <h4
+    className="message-text"
+  >
+    Failed to load the post details
+  </h4>
+</div>
+`;
+
+exports[`Storyshots PostView Default 1`] = `
+<div>
+  <div
+    className="blog-post-card"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <button
+        className="continue-button"
+      >
+        Back
+      </button>
+    </a>
+    <h3
+      className="title"
+    >
+      Test Blog Post
+    </h3>
+    <p
+      className="date-time"
+    >
+      2020 Jan 12 09:25PM
+    </p>
+    <p>
+      The Redux API surface is tiny. Redux defines a set of contracts for you to implement (such as reducers) and provides a few helper functions to tie these contracts together. The Redux API surface is tiny. Redux defines a set of contracts for you to implement (such as reducers) and provides a few helper functions to tie these contracts together. The Redux API surface is tiny. Redux defines a set of contracts for you to implement (such as reducers) and provides a few helper functions to tie these contracts together. The Redux API surface is tiny. Redux defines a set of contracts for you to implement (such as reducers) and provides a few helper functions to tie these contracts together. The Redux API surface is tiny. Redux defines a set of contracts for you to implement (such as reducers) and provides a few helper functions to tie these contracts together.
+    </p>
+    <div
+      className="comments-list-box"
+    >
+      <h4
+        className="title"
+      >
+        Comments
+      </h4>
+      <div>
+        <div
+          className="comment-card"
+        >
+          <p
+            className="body"
+          >
+            laudantium enim quasi est quidem magnam voluptate ipsam eos
+tempora quo necessitatibus
+dolor quam autem quasi
+reiciendis et nam sapiente accusantium
+          </p>
+          <p
+            className="user-name"
+          >
+            id labore ex et quam laborum &lt;Eliseo@gardner.biz&gt;
+          </p>
+        </div>
+        <div
+          className="comment-card"
+        >
+          <p
+            className="body"
+          >
+            est natus enim nihil est dolore omnis voluptatem numquam
+et omnis occaecati quod ullam at
+voluptatem error expedita pariatur
+nihil sint nostrum voluptatem reiciendis et
+          </p>
+          <p
+            className="user-name"
+          >
+            quo vero reiciendis velit similique earum &lt;Jayne_Kuhic@sydney.com&gt;
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

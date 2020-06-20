@@ -1,0 +1,25 @@
+.blog-post-card {
+  margin-left: 10%;
+  width: 80%;
+  padding: 1rem;
+  background: white;
+  color: #3b3b3b;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.title {
+  color: #252525;
+  margin-bottom: 10px;
+}
+
+.date-time {
+  font-size: small;
+  color: #515151;
+  margin-bottom: 1px;
+}
+
+.continue-button {
+  color: #252525;
+  margin-top: 5px;
+  padding: 5px;
+}

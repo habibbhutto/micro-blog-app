@@ -1,0 +1,11 @@
+.comments-list-box {
+  padding: 5px;
+  /* border-top: 2px solid whitesmoke; */
+  background: white;
+}
+
+.title {
+  padding: 5px;
+  border-bottom: 2px solid whitesmoke;
+  background: white;
+}

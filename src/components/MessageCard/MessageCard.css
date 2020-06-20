@@ -1,0 +1,19 @@
+.message-card {
+  margin-left: 10%;
+  width: 80%;
+  padding: 1rem;
+  background: white;
+  color: #3b3b3b;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.message-title {
+  color: #252525;
+  margin-bottom: 10px;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.message-text {
+  color: #252525;
+  margin-bottom: 10px;
+}
