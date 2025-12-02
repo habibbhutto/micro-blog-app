@@ -9,9 +9,7 @@ import {
   fetchPostCommentsFailed,
 } from '../actions';
 import { getAllBlogPosts, getPostDetails, getPostComments } from './index';
-import { blogPostListData } from '../../components/BlogPostList/BlogPostList.stories';
-import { blogPostData } from '../../components/BlogPost/BlogPost.stories';
-import { commentsData } from '../../components/CommentsList/CommentsList.stories';
+import { blogPostListData, blogPostData, commentsData } from './__fixtures__/testData';
 
 jest.mock('axios');
 

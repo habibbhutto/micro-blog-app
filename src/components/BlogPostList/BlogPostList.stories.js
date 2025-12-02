@@ -1,16 +1,14 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, object } from '@storybook/addon-knobs/react';
 
 import { BlogPostList } from './BlogPostList';
-import { MemoryRouter } from 'react-router';
+import { MemoryRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 export default {
   component: BlogPostList,
   title: 'BlogPostList',
   decorators: [
-    withKnobs,
     (story) => (
       <Provider store={store}>
         <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>
@@ -48,5 +46,5 @@ const actions = {
 };
 
 export const Default = () => (
-  <BlogPostList posts={object('posts', [...blogPostListData])} {...actions} />
+  <BlogPostList posts={[...blogPostListData]} {...actions} />
 );

@@ -1,13 +1,10 @@
 import React from 'react';
-import { action } from '@storybook/addon-actions';
-import { withKnobs, object } from '@storybook/addon-knobs/react';
 
 import CommentsList from './CommentsList';
 
 export default {
   component: CommentsList,
   title: 'CommentsList',
-  decorators: [withKnobs],
   // Our exports that end in 'Data' are not stories
   excludeStories: /.*Data$/,
 };
@@ -32,5 +29,5 @@ export const commentsData = [
 ];
 
 export const Default = () => (
-  <CommentsList comments={object('comments', [...commentsData])} />
+  <CommentsList comments={[...commentsData]} />
 );
