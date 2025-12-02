@@ -1,15 +1,12 @@
 import React from 'react';
-import { action } from '@storybook/addon-actions';
-import { withKnobs, object } from '@storybook/addon-knobs/react';
 
 import BlogPost from './BlogPost';
-import { MemoryRouter } from 'react-router';
+import { MemoryRouter } from 'react-router-dom';
 
 export default {
   component: BlogPost,
   title: 'BlogPost',
   decorators: [
-    withKnobs,
     (story) => <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>,
   ],
   // Our exports that end in 'Data' are not stories
@@ -25,5 +22,5 @@ export const blogPostData = {
 };
 
 export const Default = () => (
-  <BlogPost post={object('post', { ...blogPostData })} />
+  <BlogPost post={{ ...blogPostData }} />
 );

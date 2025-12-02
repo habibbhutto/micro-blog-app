@@ -1,9 +1,16 @@
-module.exports = {
-  stories: ['../src/components/**/*.stories.js'],
+/** @type { import('@storybook/react-webpack5').StorybookConfig } */
+const config = {
+  stories: ['../src/components/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
-    '@storybook/preset-create-react-app',
-    '@storybook/addon-actions',
     '@storybook/addon-links',
-    '@storybook/addon-knobs',
+    '@storybook/addon-essentials',
+    '@storybook/addon-interactions',
   ],
+  framework: {
+    name: '@storybook/react-webpack5',
+    options: {},
+  },
+  docs: {},
+  staticDirs: ['../public'],
 };
+export default config;

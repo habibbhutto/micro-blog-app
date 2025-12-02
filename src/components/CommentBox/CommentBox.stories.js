@@ -1,13 +1,10 @@
 import React from 'react';
-import { action } from '@storybook/addon-actions';
-import { withKnobs, object } from '@storybook/addon-knobs/react';
 
 import CommentBox from './CommentBox';
 
 export default {
   component: CommentBox,
   title: 'CommentBox',
-  decorators: [withKnobs],
   // Our exports that end in 'Data' are not stories
   excludeStories: /.*Data$/,
 };
@@ -22,5 +19,5 @@ export const commentData = {
 };
 
 export const Default = () => (
-  <CommentBox comment={object('comment', { ...commentData })} />
+  <CommentBox comment={{ ...commentData }} />
 );

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { Switch } from 'react-router';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import BlogPostList from './components/BlogPostList';
 import PostView from './components/PostView';
@@ -17,10 +16,10 @@ function App() {
     <Provider store={store}>
       <Router>
         <MainHeader />
-        <Switch>
-          <Route path='/post/:id' component={PostView} />
-          <Route path='/' component={BlogPostList} />
-        </Switch>
+        <Routes>
+          <Route path='/post/:id' element={<PostView />} />
+          <Route path='/' element={<BlogPostList />} />
+        </Routes>
         <MainFooter />
       </Router>
     </Provider>

@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import T from 'prop-types';
 
 import { fetchPostDetails, fetchPostComments } from '../../store/actions';
@@ -10,12 +10,11 @@ import MessageCard from '../MessageCard';
 export class PostView extends Component {
   static propTypes = {
     fetchPostDetails: T.func,
+    params: T.object,
   };
 
   componentDidMount() {
-    const {
-      match: { params },
-    } = this.props;
+    const { params } = this.props;
 
     this.props.fetchPostDetails(params.id);
     this.props.fetchPostComments(params.id);
@@ -86,4 +85,12 @@ export const mapDispatchToProps = (dispatch) => ({
   },
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(PostView);
+const ConnectedPostView = connect(mapStateToProps, mapDispatchToProps)(PostView);
+
+// Wrapper to pass URL params as props (react-router-dom v6 compatibility)
+function PostViewWrapper(props) {
+  const params = useParams();
+  return <ConnectedPostView {...props} params={params} />;
+}
+
+export default PostViewWrapper;

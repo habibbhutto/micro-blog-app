@@ -1,12 +1,12 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { MemoryRouter } from 'react-router';
+import { MemoryRouter } from 'react-router-dom';
 
 import { PostView } from './PostView';
 
 test('renders something wrong on error', async () => {
   const props = {
-    match: { params: { id: 1 } },
+    params: { id: 1 },
     post: { error: { message: 'dummy error' } },
     fetchPostDetails: jest.fn(),
     fetchPostComments: jest.fn(),
@@ -23,7 +23,7 @@ test('renders something wrong on error', async () => {
 
 test('renders fetching blog post', async () => {
   const props = {
-    match: { params: { id: 1 } },
+    params: { id: 1 },
     post: null,
     fetchPostDetails: jest.fn(),
     fetchPostComments: jest.fn(),
